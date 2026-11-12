@@ -1,0 +1,201 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    PROYECTO EDUCATIVO EDUTECH                               ║
+║              Sitio Web Educativo para Grado Décimo                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📁 UBICACIÓN DEL PROYECTO
+═══════════════════════════════════════════════════════════════════════════════
+/home/ubuntu/proyecto-educativo/
+
+🚀 CÓMO ABRIR EN SUBLIME TEXT
+═══════════════════════════════════════════════════════════════════════════════
+1. Abre Sublime Text
+2. Ve a File > Open Folder
+3. Selecciona: /home/ubuntu/proyecto-educativo/
+4. ¡Listo! Verás toda la estructura del proyecto
+
+📄 ARCHIVOS PRINCIPALES
+═══════════════════════════════════════════════════════════════════════════════
+✓ index.html              - Página principal (COMIENZA AQUÍ)
+✓ css/estilos.css         - Estilos CSS externos (ARCHIVO IMPORTANTE)
+✓ paginas/opcion1/        - Mujeres Científicas (3 páginas)
+✓ paginas/opcion2/        - Historia de la Computación (4 páginas)
+✓ paginas/opcion3/        - Programación de Software (4 páginas)
+✓ paginas/opcion4/        - Acerca de (4 páginas)
+✓ README.md               - Documentación completa
+
+🌐 CÓMO VER EN EL NAVEGADOR
+═══════════════════════════════════════════════════════════════════════════════
+OPCIÓN 1 - Abrir directamente:
+  1. Ve a la carpeta: /home/ubuntu/proyecto-educativo/
+  2. Haz doble clic en: index.html
+  3. Se abrirá en tu navegador predeterminado
+
+OPCIÓN 2 - Usar servidor local (recomendado):
+  1. Abre terminal
+  2. Escribe: cd /home/ubuntu/proyecto-educativo/
+  3. Luego: python3 -m http.server 8000
+  4. Abre navegador: http://localhost:8000
+  5. ¡Presiona Ctrl+C para detener el servidor!
+
+📊 ESTRUCTURA DEL PROYECTO
+═══════════════════════════════════════════════════════════════════════════════
+proyecto-educativo/
+├── index.html                          ← PÁGINA PRINCIPAL
+├── css/
+│   └── estilos.css                     ← ESTILOS EXTERNOS
+├── paginas/
+│   ├── opcion1/
+│   │   ├── mujeres_sistemas.html
+│   │   ├── mujeres_matematica.html
+│   │   └── mujeres_medicina.html
+│   ├── opcion2/
+│   │   ├── historia_computacion.html
+│   │   ├── pioneros_computacion.html
+│   │   ├── evolucion_computadoras.html
+│   │   └── internet_historia.html
+│   ├── opcion3/
+│   │   ├── intro_programacion.html
+│   │   ├── lenguajes_programacion.html
+│   │   ├── paradigmas_programacion.html
+│   │   └── desarrollo_software.html
+│   └── opcion4/
+│       ├── acerca_proyecto.html
+│       ├── autores.html
+│       ├── recursos.html
+│       └── contacto.html
+├── media/                              ← Para agregar videos, audios, imágenes
+├── README.md
+└── INSTRUCCIONES_RAPIDAS.txt           ← ESTE ARCHIVO
+
+🎯 CARACTERÍSTICAS DEL PROYECTO
+═══════════════════════════════════════════════════════════════════════════════
+✅ 16 páginas HTML completamente funcionales
+✅ Menú principal con 4 opciones y submenús desplegables
+✅ CSS externo (estilos.css) para fácil enseñanza
+✅ Diseño responsive (funciona en móviles, tablets, computadoras)
+✅ Contenido multimedia (videos, audios, imágenes)
+✅ Cajas de texto estilizadas (destacadas, info, éxito, advertencia)
+✅ Tablas comparativas
+✅ Líneas de tiempo
+✅ Tarjetas interactivas
+✅ Footer completo con enlaces y redes sociales
+✅ Colores atractivos y profesionales
+✅ Navegación intuitiva entre páginas
+
+📚 CONTENIDO POR SECCIÓN
+═══════════════════════════════════════════════════════════════════════════════
+OPCIÓN 1: MUJERES CIENTÍFICAS
+  • Mujeres en Sistemas (Ada Lovelace, Grace Hopper, Hedy Lamarr)
+  • Mujeres en Matemática (Emmy Noether, Sofía Kovalévskaya, Katherine Johnson)
+  • Mujeres en Medicina (Marie Curie, Lise Meitner, Rosalind Franklin)
+
+OPCIÓN 2: HISTORIA DE LA COMPUTACIÓN
+  • Introducción Histórica (Eras de la computación)
+  • Pioneros de la Computación (Turing, Von Neumann, Jobs)
+  • Evolución de Computadoras (Mainframes a Smartphones)
+  • Internet e Informática (Hitos y tecnologías)
+
+OPCIÓN 3: PROGRAMACIÓN DE SOFTWARE
+  • Introducción a la Programación (Conceptos fundamentales)
+  • Lenguajes de Programación (Python, Java, JavaScript, etc.)
+  • Paradigmas de Programación (OOP, Funcional, Declarativo)
+  • Desarrollo de Software (SDLC, metodologías, herramientas)
+
+OPCIÓN 4: ACERCA DE
+  • Acerca del Proyecto (Objetivos y misión)
+  • Autores y Créditos (Equipo de desarrollo)
+  • Recursos Educativos (Enlaces y referencias)
+  • Contacto (Formulario y información)
+
+🎓 CÓMO USAR EN CLASE
+═══════════════════════════════════════════════════════════════════════════════
+1. MOSTRAR LA ESTRUCTURA HTML
+   - Abre index.html en Sublime
+   - Explica las etiquetas: <header>, <nav>, <main>, <footer>
+   - Muestra cómo se organizan los menús
+
+2. EXPLICAR EL CSS EXTERNO
+   - Abre css/estilos.css
+   - Muestra la conexión: <link rel="stylesheet" href="css/estilos.css">
+   - Explica cómo se usan las clases CSS
+
+3. DEMOSTRAR EN EL NAVEGADOR
+   - Abre index.html en el navegador
+   - Navega por las diferentes secciones
+   - Muestra cómo funcionan los menús desplegables
+   - Explica el diseño responsive
+
+4. ANALIZAR COMPONENTES
+   - Tarjetas (.tarjeta)
+   - Cajas (.caja-destacada, .caja-info)
+   - Botones (.boton)
+   - Tablas
+   - Líneas de tiempo
+
+5. CREAR VARIACIONES
+   - Pide a los estudiantes que cambien colores
+   - Que agreguen nuevas páginas
+   - Que modifiquen el contenido
+   - Que personalicen el diseño
+
+🎨 PERSONALIZACIÓN RÁPIDA
+═══════════════════════════════════════════════════════════════════════════════
+Para cambiar colores, edita css/estilos.css:
+
+:root {
+    --color-primario: #2c3e50;          ← Color principal (azul oscuro)
+    --color-secundario: #e74c3c;        ← Color secundario (rojo)
+    --color-acento: #3498db;            ← Color de acento (azul)
+    --color-exito: #27ae60;             ← Color de éxito (verde)
+    --color-advertencia: #f39c12;       ← Color de advertencia (naranja)
+    --color-fondo: #ecf0f1;             ← Color de fondo
+    --color-texto: #2c3e50;             ← Color de texto
+}
+
+💡 CONSEJOS PARA ENSEÑANZA
+═══════════════════════════════════════════════════════════════════════════════
+✓ Comienza mostrando index.html en el navegador
+✓ Luego abre el código en Sublime para explicar
+✓ Usa el inspector del navegador (F12) para mostrar elementos
+✓ Pide a estudiantes que hagan cambios pequeños
+✓ Gradualmente aumenta la complejidad
+✓ Usa el proyecto como base para nuevas páginas
+✓ Enseña sobre rutas relativas de archivos
+✓ Explica la importancia del CSS externo
+
+🔗 ENLACES IMPORTANTES
+═══════════════════════════════════════════════════════════════════════════════
+Documentación completa: README.md
+Formulario de contacto: paginas/opcion4/contacto.html
+Recursos educativos: paginas/opcion4/recursos.html
+
+❓ PREGUNTAS FRECUENTES
+═══════════════════════════════════════════════════════════════════════════════
+P: ¿Cómo agrego una nueva página?
+R: Copia una página existente, modifica el contenido y actualiza los enlaces.
+
+P: ¿Cómo cambio los colores?
+R: Edita las variables en css/estilos.css (líneas 8-17)
+
+P: ¿Cómo agrego videos o audios?
+R: Coloca los archivos en media/ y referencia en HTML con <video> o <audio>
+
+P: ¿Funciona en móviles?
+R: Sí, el diseño es responsive y se adapta a cualquier pantalla.
+
+P: ¿Puedo usar esto en clase?
+R: Sí, está bajo licencia Creative Commons para fines educativos.
+
+📞 SOPORTE
+═══════════════════════════════════════════════════════════════════════════════
+Para preguntas o sugerencias, usa el formulario de contacto en:
+paginas/opcion4/contacto.html
+
+¡DISFRUTA ENSEÑANDO! 🚀
+
+═══════════════════════════════════════════════════════════════════════════════
+Proyecto creado: Marzo 2024
+Versión: 1.0
+Licencia: Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+═══════════════════════════════════════════════════════════════════════════════

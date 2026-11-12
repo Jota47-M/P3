@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos Anidados y Bucles - EduTech</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+
+    <!-- ===== ENCABEZADO Y NAVEGACIÓN ===== -->
+    <header>
+        <div class="header-contenedor">
+            <a href="../../index.html">
+                <img src="../../img/logo_edutech.png" alt="EduTech Logo" class="logo-img">
+            </a>
+            <nav>
+                <ul class="menu-principal">
+                    <li class="menu-item"><a href="../../index.html">Inicio</a></li>
+                    <li class="menu-item">
+                        <a href="#">Algoritmos &#9662;</a>
+                        <ul class="submenu">
+                            <li><a href="definicion_algoritmo.html">&#128221; Definición de Algoritmo</a></li>
+                            <li><a href="algoritmos_secuenciales.html">&#10145;&#65039; Algoritmos Secuenciales</a></li>
+                            <li><a href="algoritmos_condicionales.html">&#10067; Algoritmos Condicionales</a></li>
+                            <li><a href="algoritmos_anidados.html">&#129518; Algoritmos Anidados</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">PHP &#9662;</a>
+                        <ul class="submenu">
+                            <li><a href="../opcion2/definicion_php.php">&#128221; Definición PHP</a></li>
+                            <li><a href="../opcion2/php_secuenciales.php">&#10145;&#65039; Secuenciales PHP</a></li>
+                            <li><a href="../opcion2/php_condicionales.php">&#10067; Condicionales PHP</a></li>
+                            <li><a href="../opcion2/php_bucles.php">&#128260; Bucles PHP</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Programación de Software &#9662;</a>
+                        <ul class="submenu">
+                            <li><a href="../opcion3/intro_programacion.html">&#128640; Introducción a la Programación</a></li>
+                            <li><a href="../opcion3/lenguajes_programacion.html">&#9000;&#65039; Lenguajes de Programación</a></li>
+                            <li><a href="../opcion3/paradigmas_programacion.html">&#128260; Paradigmas de Programación</a></li>
+                            <li><a href="../opcion3/desarrollo_software.html">&#9881;&#65039; Desarrollo de Software</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Acerca de &#9662;</a>
+                        <ul class="submenu">
+                            <li><a href="../opcion4/acerca_proyecto.html">&#8505;&#65039; Acerca del Proyecto</a></li>
+                            <li><a href="../opcion4/autores.html">&#128101; Autores y Créditos</a></li>
+                            <li><a href="../opcion4/recursos.html">&#128218; Recursos Educativos</a></li>
+                            <li><a href="../opcion4/contacto.html">&#128236; Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main>
+        <div class="contenedor-principal">
+
+            <!-- HERO -->
+            <section class="hero">
+                <h1>&#129518; Algoritmos Anidados</h1>
+                <p>Decisiones complejas con varias condiciones, y procesos repetitivos con bucles</p>
+            </section>
+
+            <!-- INTRODUCCIÓN -->
+            <section>
+                <h2>¿Qué es un algoritmo anidado?</h2>
+                <div class="caja-destacada">
+                    <p>
+                        Un algoritmo anidado contiene decisiones dentro de otras decisiones. Es decir, dentro del
+                        camino "Sí" o "No" de una condición aparece una nueva condición. Esto permite resolver
+                        problemas con varios caminos posibles, como decidir cuál de tres números es el mayor.
+                    </p>
+                </div>
+            </section>
+
+            <!-- EJEMPLO 1: MAYOR DE TRES NÚMEROS -->
+            <section class="algo-ejemplo">
+                <span class="algo-badge">Ejemplo anidado</span>
+                <h2>Mayor de tres números</h2>
+                <p>Leer tres números diferentes y determinar el mayor.</p>
+
+                <div class="algo-grid">
+                    <div class="pseudocodigo">
+                        <span class="pc-titulo">Algoritmo</span>
+<pre><span class="kw">Inicio</span>
+   <span class="io">Leer</span> A, B, C
+   <span class="kw">Si</span> A &gt; B <span class="kw">entonces</span>:
+      <span class="kw">Si</span> A &gt; C <span class="kw">entonces</span>:
+         <span class="io">Imprimir</span> <span class="str">"El número mayor es A"</span>
+      <span class="kw">Si no</span>
+         <span class="io">Imprimir</span> <span class="str">"El número mayor es C"</span>
+   <span class="kw">Si no</span>
+      <span class="kw">Si</span> B &gt; C <span class="kw">entonces</span>:
+         <span class="io">Imprimir</span> <span class="str">"El número mayor es B"</span>
+      <span class="kw">Si no</span>:
+         <span class="io">Imprimir</span> <span class="str">"El número mayor es C"</span>
+   <span class="kw">Fin si</span>
+<span class="kw">Fin</span></pre>
+                    </div>
+
+                    <div class="diagrama-caja">
+                        <img src="../../img/diag_anid_mayor_tres.svg" alt="diag anid mayor tres" loading="lazy" style="max-width:100%;height:auto;">
+                        <p class="leyenda">Diagrama anidado: una decisión (¿A&gt;C? o ¿B&gt;C?) dentro de otra (¿A&gt;B?).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN BUCLES -->
+            <section id="bucles" class="algo-ejemplo">
+                <h2>&#128260; Bucles y ciclos</h2>
+                <div class="caja-info">
+                    <p>
+                        Un bucle es un proceso que se repite mientras se cumpla una condición. Se usa con un contador
+                        que va aumentando en cada repetición. La estructura "Mientras condición hacer ... Fin mientras"
+                        regresa el flujo al inicio del bucle hasta que la condición deja de cumplirse.
+                    </p>
+                </div>
+
+                <span class="algo-badge">Ejemplo de bucle</span>
+                <h2>Tabla de multiplicar</h2>
+                <p>Generar la tabla del 1 al 10 para un número ingresado.</p>
+
+                <div class="algo-grid">
+                    <div class="pseudocodigo">
+                        <span class="pc-titulo">Algoritmo</span>
+<pre><span class="kw">Inicio</span>
+   <span class="io">Leer</span> numero
+   contador = 1
+   <span class="kw">Mientras</span> contador &lt;= 10 <span class="kw">hacer</span>:
+      resultado = numero * contador
+      <span class="io">Imprimir</span> numero, <span class="str">"x"</span>, contador,
+               <span class="str">"="</span>, resultado
+      contador = contador + 1
+   <span class="kw">Fin mientras</span>
+<span class="kw">Fin</span></pre>
+                    </div>
+
+                    <div class="diagrama-caja">
+                        <img src="../../img/diag_bucle_tabla_multiplicar.svg" alt="diag bucle tabla multiplicar" loading="lazy" style="max-width:100%;height:auto;">
+                        <p class="leyenda">Diagrama de bucle: el flujo regresa a la condición hasta que contador supera 10.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NAVEGACIÓN ENTRE PÁGINAS -->
+            <div class="navegacion-paginas">
+                <a href="algoritmos_condicionales.html" class="nav-anterior">&#8592; Algoritmos Condicionales</a>
+                <a href="../../index.html" class="nav-siguiente">Volver al Inicio &#8594;</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-contenido">
+                <div class="footer-seccion">
+                    <h3>&#128640; EduTech</h3>
+                    <p>Sitio web educativo para estudiantes de grado décimo.</p>
+                    <div class="footer-redes">
+                        <a href="#" class="icono-red">f</a>
+                        <a href="#" class="icono-red">t</a>
+                        <a href="#" class="icono-red">&#9654;</a>
+                    </div>
+                </div>
+                <div class="footer-seccion">
+                    <h3>Algoritmos</h3>
+                    <ul>
+                        <li><a href="definicion_algoritmo.html">Definición de Algoritmo</a></li>
+                        <li><a href="algoritmos_secuenciales.html">Algoritmos Secuenciales</a></li>
+                        <li><a href="algoritmos_condicionales.html">Algoritmos Condicionales</a></li>
+                        <li><a href="algoritmos_anidados.html">Algoritmos Anidados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-seccion">
+                    <h3>Más Contenido</h3>
+                    <ul>
+                        <li><a href="../opcion2/definicion_php.php">PHP</a></li>
+                        <li><a href="../opcion3/intro_programacion.html">Programación</a></li>
+                        <li><a href="../opcion4/recursos.html">Recursos Educativos</a></li>
+                        <li><a href="../opcion4/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-linea">
+                <div class="footer-inferior">
+                    <p class="copyright">&copy; 2024 EduTech - Proyecto Educativo para Grado Décimo.</p>
+                    <div class="footer-enlaces">
+                        <a href="../../index.html">Inicio</a>
+                        <a href="../opcion4/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

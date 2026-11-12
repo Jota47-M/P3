@@ -1,0 +1,35 @@
+<svg viewBox="0 0 380 470" xmlns="http://www.w3.org/2000/svg" font-family="Arial">
+                            <defs>
+                                <marker id="c2" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+                                    <path d="M0,0 L7,3 L0,6 Z" fill="#2c3e50"/>
+                                </marker>
+                            </defs>
+                            <rect x="140" y="10" width="90" height="32" rx="16" fill="#eaf6ff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="185" y="31" text-anchor="middle" font-size="15">Inicio</text>
+                            <line x1="185" y1="42" x2="185" y2="58" stroke="#2c3e50" stroke-width="2" marker-end="url(#c2)"/>
+                            <polygon points="120,60 255,60 240,90 105,90" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="180" y="80" text-anchor="middle" font-size="13">Lea n1, n2, n3, n4</text>
+                            <line x1="180" y1="90" x2="180" y2="106" stroke="#2c3e50" stroke-width="2" marker-end="url(#c2)"/>
+                            <rect x="90" y="108" width="190" height="32" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="185" y="129" text-anchor="middle" font-size="12">Promedio = (n1+n2+n3+n4)/4</text>
+                            <line x1="185" y1="140" x2="185" y2="158" stroke="#2c3e50" stroke-width="2" marker-end="url(#c2)"/>
+                            <polygon points="185,160 295,205 185,250 75,205" fill="#fff7e6" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="185" y="201" text-anchor="middle" font-size="12">¿Promedio</text>
+                            <text x="185" y="216" text-anchor="middle" font-size="12">&gt;= 3?</text>
+                            <line x1="185" y1="250" x2="185" y2="300" stroke="#2c3e50" stroke-width="2" marker-end="url(#c2)"/>
+                            <text x="197" y="272" font-size="12" fill="#27ae60">Sí</text>
+                            <polygon points="120,302 250,302 235,338 105,338" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="178" y="324" text-anchor="middle" font-size="13">"Aprueba"</text>
+                            <line x1="295" y1="205" x2="335" y2="205" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="300" y="198" font-size="12" fill="#e74c3c">No</text>
+                            <line x1="335" y1="205" x2="335" y2="320" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="335" y1="320" x2="335" y2="338" stroke="#2c3e50" stroke-width="2"/>
+                            <polygon points="285,340 380,340 365,376 270,376" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="325" y="362" text-anchor="middle" font-size="12">"Reprueba"</text>
+                            <line x1="178" y1="338" x2="178" y2="400" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="322" y1="376" x2="322" y2="392" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="322" y1="392" x2="185" y2="392" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="185" y1="392" x2="185" y2="408" stroke="#2c3e50" stroke-width="2" marker-end="url(#c2)"/>
+                            <rect x="140" y="410" width="90" height="32" rx="16" fill="#eaf6ff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="185" y="431" text-anchor="middle" font-size="15">Fin</text>
+                        </svg>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos Secuenciales - EduTech</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+
+    <!-- ===== ENCABEZADO Y NAVEGACIÓN ===== -->
+    <header>
+        <div class="header-contenedor">
+            <a href="../../index.html">
+                <img src="../../img/logo_edutech.png" alt="EduTech Logo" class="logo-img">
+            </a>
+            <nav>
+                <ul class="menu-principal">
+                    <li class="menu-item"><a href="../../index.html">Inicio</a></li>
+                    <li class="menu-item">
+                        <a href="#">Algoritmos &#9662;</a>
+                        <ul class="submenu">
+                            <li><a href="definicion_algoritmo.html">&#128221; Definición de Algoritmo</a></li>
+                            <li><a href="algoritmos_secuenciales.html">&#10145;&#65039; Algoritmos Secuenciales</a></li>
+                            <li><a href="algoritmos_condicionales.html">&#10067; Algoritmos Condicionales</a></li>
+                            <li><a href="algoritmos_anidados.html">&#129518; Algoritmos Anidados</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">PHP &#9662;</a>
+                        <ul class="submenu">
+                            <li><a href="../opcion2/definicion_php.php">&#128221; Definición PHP</a></li>
+                            <li><a href="../opcion2/php_secuenciales.php">&#10145;&#65039; Secuenciales PHP</a></li>
+                            <li><a href="../opcion2/php_condicionales.php">&#10067; Condicionales PHP</a></li>
+                            <li><a href="../opcion2/php_bucles.php">&#128260; Bucles PHP</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Programación de Software &#9662;</a>
+                        <ul class="submenu">
+                            <li><a href="../opcion3/intro_programacion.html">&#128640; Introducción a la Programación</a></li>
+                            <li><a href="../opcion3/lenguajes_programacion.html">&#9000;&#65039; Lenguajes de Programación</a></li>
+                            <li><a href="../opcion3/paradigmas_programacion.html">&#128260; Paradigmas de Programación</a></li>
+                            <li><a href="../opcion3/desarrollo_software.html">&#9881;&#65039; Desarrollo de Software</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Acerca de &#9662;</a>
+                        <ul class="submenu">
+                            <li><a href="../opcion4/acerca_proyecto.html">&#8505;&#65039; Acerca del Proyecto</a></li>
+                            <li><a href="../opcion4/autores.html">&#128101; Autores y Créditos</a></li>
+                            <li><a href="../opcion4/recursos.html">&#128218; Recursos Educativos</a></li>
+                            <li><a href="../opcion4/contacto.html">&#128236; Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main>
+        <div class="contenedor-principal">
+
+            <!-- HERO -->
+            <section class="hero">
+                <h1>&#10145;&#65039; Algoritmos Secuenciales</h1>
+                <p>Las tareas se suceden una tras otra, sin ninguna decisión</p>
+            </section>
+
+            <!-- INTRODUCCIÓN -->
+            <section>
+                <h2>¿Qué es un algoritmo secuencial?</h2>
+                <div class="caja-destacada">
+                    <p>
+                        En un algoritmo secuencial las tareas se ejecutan una a continuación de otra, en orden,
+                        sin ninguna bifurcación ni decisión. Este tipo de algoritmo es útil para conocer el orden
+                        exacto en el que hay que realizar una tarea: primero leer los datos, después calcular y por
+                        último mostrar el resultado.
+                    </p>
+                </div>
+            </section>
+
+            <!-- EJEMPLO 1: OPERACIONES BÁSICAS -->
+            <section class="algo-ejemplo">
+                <span class="algo-badge">Ejemplo 1</span>
+                <h2>Operaciones básicas</h2>
+                <p>
+                    Leer dos números y mostrar el resultado de su suma, resta, multiplicación y división.
+                </p>
+
+                <div class="algo-grid">
+                    <!-- Pseudocódigo -->
+                    <div class="pseudocodigo">
+                        <span class="pc-titulo">Algoritmo</span>
+<pre><span class="kw">Inicio</span> {
+   <span class="io">Lea</span> n1, n2
+   Suma = n1 + n2
+   Resta = n1 - n2
+   Multiplicacion = n1 * n2
+   Division = n1 / n2
+   <span class="io">Imprimir</span> Suma, Resta,
+            Multiplicacion, Division
+<span class="kw">Fin</span> }</pre>
+                    </div>
+
+                    <!-- Diagrama de flujo SVG -->
+                    <div class="diagrama-caja">
+                        <img src="../../img/diag_sec_operaciones.svg" alt="diag sec operaciones" loading="lazy" style="max-width:100%;height:auto;">
+                        <p class="leyenda">Diagrama de flujo secuencial de las operaciones básicas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EJEMPLO 2: CÁLCULO DE IVA -->
+            <section class="algo-ejemplo">
+                <span class="algo-badge">Ejemplo 2</span>
+                <h2>Cálculo del IVA</h2>
+                <p>
+                    Pedir el precio base de un producto, calcular el 19% de IVA y mostrar el precio final a pagar.
+                </p>
+
+                <div class="algo-grid">
+                    <!-- Pseudocódigo -->
+                    <div class="pseudocodigo">
+                        <span class="pc-titulo">Algoritmo</span>
+<pre><span class="kw">Inicio</span> {
+   <span class="io">Lea</span> pago
+   Iva = 0.19 * pago
+   Precio_Final = pago + Iva
+   <span class="io">Imprima</span> Precio_Final
+<span class="kw">Fin</span> }</pre>
+                    </div>
+
+                    <!-- Diagrama de flujo SVG -->
+                    <div class="diagrama-caja">
+                        <img src="../../img/diag_sec_iva.svg" alt="diag sec iva" loading="lazy" style="max-width:100%;height:auto;">
+                        <p class="leyenda">Diagrama de flujo secuencial del cálculo del IVA.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EJEMPLO 3: GASTO EN PAPELERÍA -->
+            <section class="algo-ejemplo">
+                <span class="algo-badge">Ejemplo 3</span>
+                <h2>Gasto en papelería</h2>
+                <p>
+                    Pedir cantidad y precio unitario de libretas y bolígrafos para calcular el gasto total.
+                </p>
+
+                <div class="algo-grid">
+                    <div class="pseudocodigo">
+                        <span class="pc-titulo">Algoritmo</span>
+<pre><span class="kw">Inicio</span> {
+   <span class="io">Lea</span> CL, Cb, PL, Pb
+   Gasto = CL*PL + Cb*Pb
+   <span class="io">Imprimir</span> Gasto
+<span class="kw">Fin</span> }</pre>
+                    </div>
+
+                    <div class="diagrama-caja">
+                        <img src="../../img/diag_sec_papeleria.svg" alt="diag sec papeleria" loading="lazy" style="max-width:100%;height:auto;">
+                        <p class="leyenda">Diagrama de flujo secuencial del gasto en papelería.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EJEMPLO 4: ÁREA Y PERÍMETRO -->
+            <section class="algo-ejemplo">
+                <span class="algo-badge">Ejemplo 4</span>
+                <h2>Área y perímetro de un rectángulo</h2>
+                <p>
+                    Leer la base y la altura de un rectángulo. Calcular y mostrar su perímetro y su área.
+                </p>
+
+                <div class="algo-grid">
+                    <div class="pseudocodigo">
+                        <span class="pc-titulo">Algoritmo</span>
+<pre><span class="kw">Inicio</span> {
+   <span class="io">Lea</span> B, H
+   Area = B * H
+   Perimetro = 2*B + 2*H
+   <span class="io">Imprimir</span> Area, Perimetro
+<span class="kw">Final</span> }</pre>
+                    </div>
+
+                    <div class="diagrama-caja">
+                        <img src="../../img/diag_sec_area_perimetro.svg" alt="diag sec area perimetro" loading="lazy" style="max-width:100%;height:auto;">
+                        <p class="leyenda">Diagrama de flujo secuencial del área y el perímetro.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NAVEGACIÓN ENTRE PÁGINAS -->
+            <div class="navegacion-paginas">
+                <a href="definicion_algoritmo.html" class="nav-anterior">&#8592; Definición de Algoritmo</a>
+                <a href="algoritmos_condicionales.html" class="nav-siguiente">Algoritmos Condicionales &#8594;</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-contenido">
+                <div class="footer-seccion">
+                    <h3>&#128640; EduTech</h3>
+                    <p>Sitio web educativo para estudiantes de grado décimo.</p>
+                    <div class="footer-redes">
+                        <a href="#" class="icono-red">f</a>
+                        <a href="#" class="icono-red">t</a>
+                        <a href="#" class="icono-red">&#9654;</a>
+                    </div>
+                </div>
+                <div class="footer-seccion">
+                    <h3>Algoritmos</h3>
+                    <ul>
+                        <li><a href="definicion_algoritmo.html">Definición de Algoritmo</a></li>
+                        <li><a href="algoritmos_secuenciales.html">Algoritmos Secuenciales</a></li>
+                        <li><a href="algoritmos_condicionales.html">Algoritmos Condicionales</a></li>
+                        <li><a href="algoritmos_anidados.html">Algoritmos Anidados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-seccion">
+                    <h3>Más Contenido</h3>
+                    <ul>
+                        <li><a href="../opcion2/definicion_php.php">PHP</a></li>
+                        <li><a href="../opcion3/intro_programacion.html">Programación</a></li>
+                        <li><a href="../opcion4/recursos.html">Recursos Educativos</a></li>
+                        <li><a href="../opcion4/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-linea">
+                <div class="footer-inferior">
+                    <p class="copyright">&copy; 2024 EduTech - Proyecto Educativo para Grado Décimo.</p>
+                    <div class="footer-enlaces">
+                        <a href="../../index.html">Inicio</a>
+                        <a href="../opcion4/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

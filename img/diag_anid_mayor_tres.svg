@@ -1,0 +1,67 @@
+<svg viewBox="0 0 460 560" xmlns="http://www.w3.org/2000/svg" font-family="Arial">
+                            <defs>
+                                <marker id="n1" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+                                    <path d="M0,0 L7,3 L0,6 Z" fill="#2c3e50"/>
+                                </marker>
+                            </defs>
+                            <!-- Inicio -->
+                            <rect x="185" y="8" width="90" height="30" rx="15" fill="#eaf6ff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="230" y="28" text-anchor="middle" font-size="14">Inicio</text>
+                            <line x1="230" y1="38" x2="230" y2="52" stroke="#2c3e50" stroke-width="2" marker-end="url(#n1)"/>
+                            <!-- Entrada -->
+                            <polygon points="185,54 285,54 270,82 170,82" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="227" y="73" text-anchor="middle" font-size="13">Leer A, B, C</text>
+                            <line x1="227" y1="82" x2="227" y2="98" stroke="#2c3e50" stroke-width="2" marker-end="url(#n1)"/>
+                            <!-- Decisión A > B -->
+                            <polygon points="230,100 320,140 230,180 140,140" fill="#fff7e6" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="230" y="145" text-anchor="middle" font-size="13">¿A &gt; B?</text>
+                            <!-- Rama Sí: A>C (izquierda) -->
+                            <line x1="140" y1="140" x2="95" y2="140" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="105" y="133" font-size="11" fill="#27ae60">Sí</text>
+                            <line x1="95" y1="140" x2="95" y2="200" stroke="#2c3e50" stroke-width="2" marker-end="url(#n1)"/>
+                            <polygon points="95,202 175,237 95,272 15,237" fill="#fff7e6" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="95" y="241" text-anchor="middle" font-size="12">¿A &gt; C?</text>
+                            <!-- A>C Sí -> "A" -->
+                            <line x1="95" y1="272" x2="95" y2="312" stroke="#2c3e50" stroke-width="2" marker-end="url(#n1)"/>
+                            <text x="105" y="292" font-size="11" fill="#27ae60">Sí</text>
+                            <rect x="20" y="314" width="150" height="40" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="95" y="330" text-anchor="middle" font-size="11">El número</text>
+                            <text x="95" y="345" text-anchor="middle" font-size="11">mayor es A</text>
+                            <!-- A>C No -> "C" -->
+                            <line x1="15" y1="237" x2="-2" y2="237" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="2" y="230" font-size="11" fill="#e74c3c">No</text>
+                            <!-- redirige: usamos un caja a la izquierda inferior -->
+                            <rect x="20" y="372" width="150" height="40" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="95" y="388" text-anchor="middle" font-size="11">El número</text>
+                            <text x="95" y="403" text-anchor="middle" font-size="11">mayor es C</text>
+                            <path d="M -2,237 L -10,237 L -10,392 L 20,392" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#n1)"/>
+                            <!-- Rama No: B>C (derecha) -->
+                            <line x1="320" y1="140" x2="365" y2="140" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="328" y="133" font-size="11" fill="#e74c3c">No</text>
+                            <line x1="365" y1="140" x2="365" y2="200" stroke="#2c3e50" stroke-width="2" marker-end="url(#n1)"/>
+                            <polygon points="365,202 445,237 365,272 285,237" fill="#fff7e6" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="365" y="241" text-anchor="middle" font-size="12">¿B &gt; C?</text>
+                            <!-- B>C Sí -> "B" -->
+                            <line x1="365" y1="272" x2="365" y2="312" stroke="#2c3e50" stroke-width="2" marker-end="url(#n1)"/>
+                            <text x="375" y="292" font-size="11" fill="#27ae60">Sí</text>
+                            <rect x="290" y="314" width="150" height="40" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="365" y="330" text-anchor="middle" font-size="11">El número</text>
+                            <text x="365" y="345" text-anchor="middle" font-size="11">mayor es B</text>
+                            <!-- B>C No -> "C" -->
+                            <line x1="445" y1="237" x2="455" y2="237" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="448" y="230" font-size="11" fill="#e74c3c">No</text>
+                            <rect x="290" y="372" width="150" height="40" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="365" y="388" text-anchor="middle" font-size="11">El número</text>
+                            <text x="365" y="403" text-anchor="middle" font-size="11">mayor es C</text>
+                            <path d="M 455,237 L 460,237 L 460,392 L 440,392" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#n1)"/>
+                            <!-- Convergencia a Fin -->
+                            <line x1="95" y1="354" x2="95" y2="470" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="95" y1="412" x2="95" y2="470" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="365" y1="354" x2="365" y2="470" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="365" y1="412" x2="365" y2="470" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="95" y1="470" x2="365" y2="470" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="230" y1="470" x2="230" y2="500" stroke="#2c3e50" stroke-width="2" marker-end="url(#n1)"/>
+                            <!-- Fin -->
+                            <rect x="185" y="502" width="90" height="30" rx="15" fill="#eaf6ff" stroke="#2c3e50" stroke-width="2"/>
+                            <text x="230" y="522" text-anchor="middle" font-size="14">Fin</text>
+                        </svg>

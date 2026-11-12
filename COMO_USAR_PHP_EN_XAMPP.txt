@@ -1,0 +1,31 @@
+COMO EJECUTAR LA SECCION PHP EN XAMPP
+=====================================
+
+Las paginas de la seccion "PHP" del menu tienen extension .php y se ejecutan en
+el servidor. Para que funcionen (formularios, calculos, ecuacion de segundo grado)
+hay que abrirlas a traves de Apache, NO con doble clic.
+
+PASOS:
+
+1. Instala y abre XAMPP. En el panel de control, presiona "Start" en Apache.
+
+2. Copia la carpeta completa "PaginaJT" dentro de:
+      C:\xampp\htdocs
+
+   Debe quedar asi:  C:\xampp\htdocs\PaginaJT\index.html
+
+3. Abre el navegador y entra a:
+      http://localhost/PaginaJT/index.html
+
+   Para ir directo a la seccion PHP:
+      http://localhost/PaginaJT/paginas/opcion2/definicion_php.php
+
+4. En cada ejemplo (Secuenciales, Condicionales, Bucles) escribe los datos en el
+   formulario y presiona el boton. PHP procesa los datos en el servidor y muestra
+   el resultado real en el recuadro verde.
+
+NOTA: el resto del sitio (Inicio, Algoritmos, etc.) son paginas .html normales y
+se pueden ver con o sin servidor. Solo la seccion PHP necesita XAMPP.
+
+Si abres un archivo .php con doble clic veras el codigo en vez del resultado:
+eso es normal, debes usar http://localhost como se explico arriba.
